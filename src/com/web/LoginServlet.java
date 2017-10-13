@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String name=request.getParameter("uname");
-		response.getWriter().append("Served at: "+name).append(request.getContextPath());
+		response.getWriter().append("LoginName: "+name);
 	}
 
 	/**
